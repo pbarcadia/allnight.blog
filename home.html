@@ -2,149 +2,96 @@
 title: Home
 description: 
 published: true
-date: 2026-05-18T12:47:00.447Z
+date: 2026-05-18T12:48:59.194Z
 tags: 
 editor: code
 dateCreated: 2026-05-18T10:47:40.657Z
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>allnight.city - EarthBound Test</title>
-    <style>
-        /* Reset and layout */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<div id="eb-wrapper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden; background-color: #000; z-index: 0; display: flex; justify-content: center; align-items: center;">
+    
+    <div id="canvas-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+        <canvas id="layer1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></canvas>
+        <canvas id="layer2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; mix-blend-mode: difference; opacity: 0.75;"></canvas>
+    </div>
 
-        body, html {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background-color: #000;
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    <div class="content-overlay" style="position: relative; z-index: 10; text-align: center; user-select: none;">
+        <h1 class="glowing-text">allnight.city</h1>
+    </div>
 
-        /* The canvas container holding our animation layers */
-        #canvas-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
+</div>
 
-        canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+<style>
+    /* Scoped glowing text styling */
+    .glowing-text {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+        text-shadow: 
+            0 0 10px #ff007f,
+            0 0 20px #ff007f,
+            0 0 40px #ff007f,
+            0 0 80px #ff007f,
+            0 0 120px #00ffff,
+            10px 10px 20px rgba(0, 0, 0, 0.9);
+        animation: eb-pulse 3s ease-in-out infinite alternate;
+    }
 
-        /* Layer 2 opacity blend adjustment to let Layer 1 peak through */
-        #layer2 {
-            mix-blend-mode: difference;
-            opacity: 0.75;
-        }
-
-        /* Foreground Content */
-        .content-overlay {
-            position: relative;
-            z-index: 10;
-            text-align: center;
-            user-select: none;
-        }
-
-        /* Glowing, shadowed text styling */
+    @media (max-width: 768px) {
         .glowing-text {
-            font-size: 5rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            color: #fff;
-            /* Layered text-shadows for the intense neon glow effect */
+            font-size: 2.5rem;
+        }
+    }
+
+    @keyframes eb-pulse {
+        from {
+            transform: scale(0.98);
             text-shadow: 
                 0 0 10px #ff007f,
                 0 0 20px #ff007f,
                 0 0 40px #ff007f,
-                0 0 80px #ff007f,
-                0 0 120px #00ffff,
                 10px 10px 20px rgba(0, 0, 0, 0.9);
-            animation: pulse 3s ease-in-out infinite alternate;
         }
-
-        @media (max-width: 768px) {
-            .glowing-text {
-                font-size: 2.5rem;
-            }
+        to {
+            transform: scale(1.02);
+            text-shadow: 
+                0 0 15px #ff007f,
+                0 0 30px #00ffff,
+                0 0 60px #00ffff,
+                0 0 100px #00ffff,
+                12px 12px 25px rgba(0, 0, 0, 0.9);
         }
+    }
+</style>
 
-        /* Subtle pulsating text effect to match the trippy vibe */
-        @keyframes pulse {
-            from {
-                transform: scale(0.98);
-                text-shadow: 
-                    0 0 10px #ff007f,
-                    0 0 20px #ff007f,
-                    0 0 40px #ff007f,
-                    10px 10px 20px rgba(0, 0, 0, 0.9);
-            }
-            to {
-                transform: scale(1.02);
-                text-shadow: 
-                    0 0 15px #ff007f,
-                    0 0 30px #00ffff,
-                    0 0 60px #00ffff,
-                    0 0 100px #00ffff,
-                    12px 12px 25px rgba(0, 0, 0, 0.9);
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <div id="canvas-container">
-        <canvas id="layer1"></canvas>
-        <canvas id="layer2"></canvas>
-    </div>
-
-    <div class="content-overlay">
-        <h1 class="glowing-text">allnight.city</h1>
-    </div>
-
-    <script>
+<script>
+    (function() {
         const canvas1 = document.getElementById('layer1');
         const ctx1 = canvas1.getContext('2d');
         const canvas2 = document.getElementById('layer2');
         const ctx2 = canvas2.getContext('2d');
+        const wrapper = document.getElementById('eb-wrapper');
 
         let width, height;
         let tick = 0;
 
         function resize() {
-            width = window.innerWidth;
-            height = window.innerHeight;
+            // Read bounds from the parent wrapper rather than window to avoid viewport layout bugs in Wiki.js
+            width = wrapper.clientWidth || window.innerWidth;
+            height = wrapper.clientHeight || window.innerHeight;
             
-            // Setting internal canvas dimensions
             canvas1.width = width;
             canvas1.height = height;
             canvas2.width = width;
             canvas2.height = height;
         }
+        
         window.addEventListener('resize', resize);
         resize();
 
-        // --- LAYER 1 ANIMATION: Psychedelic Wave Grid ---
         function drawLayer1() {
             ctx1.fillStyle = '#110022';
             ctx1.fillRect(0, 0, width, height);
@@ -155,9 +102,7 @@ dateCreated: 2026-05-18T10:47:40.657Z
             for (let x = 0; x < width; x += gridSize) {
                 ctx1.beginPath();
                 for (let y = 0; y < height; y += 5) {
-                    // Earthbound-style horizontal distortion using sine math over time
                     const distortion = Math.sin(y * 0.015 + tick * 0.05) * 35;
-                    // Color cycling logic
                     const hue = (x + tick * 0.5) % 360;
                     ctx1.strokeStyle = `hsl(${hue}, 80%, 50%)`;
                     
@@ -171,7 +116,6 @@ dateCreated: 2026-05-18T10:47:40.657Z
             }
         }
 
-        // --- LAYER 2 ANIMATION: Moire Vortex / Tunnel effect ---
         function drawLayer2() {
             ctx2.clearRect(0, 0, width, height);
             
@@ -181,24 +125,18 @@ dateCreated: 2026-05-18T10:47:40.657Z
 
             for (let r = maxRadius; r > 0; r -= 15) {
                 ctx2.beginPath();
-                
-                // Pulsate the radius dynamically over time
                 const dynamicRadius = r + Math.sin(r * 0.02 - tick * 0.08) * 20;
-                
-                // Shift the center slightly over time for a sweeping vortex look
                 const shiftX = centerX + Math.cos(tick * 0.02 + r * 0.005) * 50;
                 const shiftY = centerY + Math.sin(tick * 0.03 + r * 0.005) * 50;
 
                 ctx2.arc(shiftX, shiftY, Math.max(0, dynamicRadius), 0, Math.PI * 2);
                 
-                // High contrast cycling palette
                 const hue = (r * 0.5 - tick * 1.5) % 360;
                 ctx2.fillStyle = `hsl(${hue}, 90%, 40%)`;
                 ctx2.fill();
             }
         }
 
-        // --- MAIN ENGINE LOOP ---
         function loop() {
             tick++;
             drawLayer1();
@@ -206,7 +144,7 @@ dateCreated: 2026-05-18T10:47:40.657Z
             requestAnimationFrame(loop);
         }
 
-        loop();
-    </script>
-</body>
-</html>
+        // Slight delay loop execution to ensure Wiki.js completely populates DOM structure
+        setTimeout(loop, 100);
+    })();
+</script>
