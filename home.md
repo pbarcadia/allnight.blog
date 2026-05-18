@@ -2,38 +2,12 @@
 title: Home
 description: 
 published: true
-date: 2026-05-18T12:20:06.428Z
+date: 2026-05-18T18:38:51.445Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-18T10:47:40.657Z
 ---
 
-# 🌌 Welcome to All Night City
+# allnight.city
 
-> *"The city never sleeps, and neither does the data."* Welcome to the central hub of **All Night City**. This portal serves as the master repository for technical documentation, personal projects, retro gaming archives, and midnight thoughts.
-
-
-
-
-## 🚀 Navigation Hub
-
-| Section | Description | Status |
-| :--- | :--- | :--- |
-| [📝 The Blog](/blog) | Chronological tech articles, guides, and updates. | 🟢 Active |
-| [🕹️ Retro Emulation](/retro) | ROM preservation, hardware guides, and configurations. | 🟡 In Progress |
-| [🎛️ Production Log](/music) | Electronic music project notes and sequencing archives. | ⚪ Planned |
-| [🛠️ Homelab Infrastructure](/homelab) | Docker stacks, NAS storage maps, and networking logic. | 🟢 Active |
-
----
-
-## 📌 Featured Content
-
-### 📂 Recent Project Highlights
-* **[Self-Hosted Analytics]** — Moving away from third-party tracking scripts to locally containerized telemetry engines.
-* **[The Preservation Quest]** — Methods for bulk archiving digital media to ensure long-term data permanence.
-
-### ⚡ Quick Reference Command Line
-Need to update or trace local containers quickly? 
-```bash
-# Check the status of all active stacks on Nest
-sudo docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+/\* Scoped glowing text styling \*/ .glowing-text { font-family: 'Courier New', Courier, monospace; font-size: 5rem; font-weight: 900; text-transform: uppercase; letter-spacing: 4px; color: #fff; text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 40px #ff007f, 0 0 80px #ff007f, 0 0 120px #00ffff, 10px 10px 20px rgba(0, 0, 0, 0.9); animation: eb-pulse 3s ease-in-out infinite alternate; } @media (max-width: 768px) { .glowing-text { font-size: 2.5rem; } } @keyframes eb-pulse { from { transform: scale(0.98); text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 40px #ff007f, 10px 10px 20px rgba(0, 0, 0, 0.9); } to { transform: scale(1.02); text-shadow: 0 0 15px #ff007f, 0 0 30px #00ffff, 0 0 60px #00ffff, 0 0 100px #00ffff, 12px 12px 25px rgba(0, 0, 0, 0.9); } } (function() { const canvas1 = document.getElementById('layer1'); const ctx1 = canvas1.getContext('2d'); const canvas2 = document.getElementById('layer2'); const ctx2 = canvas2.getContext('2d'); const wrapper = document.getElementById('eb-wrapper'); let width, height; let tick = 0; function resize() { // Read bounds from the parent wrapper rather than window to avoid viewport layout bugs in Wiki.js width = wrapper.clientWidth || window.innerWidth; height = wrapper.clientHeight || window.innerHeight; canvas1.width = width; canvas1.height = height; canvas2.width = width; canvas2.height = height; } window.addEventListener('resize', resize); resize(); function drawLayer1() { ctx1.fillStyle = '#110022'; ctx1.fillRect(0, 0, width, height); const gridSize = 40; ctx1.lineWidth = 2; for (let x = 0; x < width; x += gridSize) { ctx1.beginPath(); for (let y = 0; y < height; y += 5) { const distortion = Math.sin(y \* 0.015 + tick \* 0.05) \* 35; const hue = (x + tick \* 0.5) % 360; ctx1.strokeStyle = \`hsl(${hue}, 80%, 50%)\`; if (y === 0) { ctx1.moveTo(x + distortion, y); } else { ctx1.lineTo(x + distortion, y); } } ctx1.stroke(); } } function drawLayer2() { ctx2.clearRect(0, 0, width, height); const centerX = width / 2; const centerY = height / 2; const maxRadius = Math.max(width, height) \* 0.8; for (let r = maxRadius; r > 0; r -= 15) { ctx2.beginPath(); const dynamicRadius = r + Math.sin(r \* 0.02 - tick \* 0.08) \* 20; const shiftX = centerX + Math.cos(tick \* 0.02 + r \* 0.005) \* 50; const shiftY = centerY + Math.sin(tick \* 0.03 + r \* 0.005) \* 50; ctx2.arc(shiftX, shiftY, Math.max(0, dynamicRadius), 0, Math.PI \* 2); const hue = (r \* 0.5 - tick \* 1.5) % 360; ctx2.fillStyle = \`hsl(${hue}, 90%, 40%)\`; ctx2.fill(); } } function loop() { tick++; drawLayer1(); drawLayer2(); requestAnimationFrame(loop); } // Slight delay loop execution to ensure Wiki.js completely populates DOM structure setTimeout(loop, 100); })();
