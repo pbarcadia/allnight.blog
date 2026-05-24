@@ -2,7 +2,7 @@
 title: Nostrum WoW
 description: Some helpful things for Nostrum WoW
 published: true
-date: 2026-05-24T06:36:37.710Z
+date: 2026-05-24T06:38:53.261Z
 tags: game, mmo
 editor: markdown
 dateCreated: 2026-05-24T06:02:20.640Z
@@ -62,7 +62,7 @@ These work for Wrath of the Lich King. Get them from the main index. Visit [Warp
 
 ### 🎒 Personal Addon List
 
-Here is my active addon list. I use these for raiding. They help with leveling. Here are the links and details:
+Here is my active addon list.
 
 | Addon Name & Link | Description |
 | :--- | :--- |
