@@ -2,7 +2,7 @@
 title: Nostrum WoW
 description: Some helpful things for Nostrum WoW
 published: true
-date: 2026-05-24T06:18:27.804Z
+date: 2026-05-24T06:19:20.338Z
 tags: game, mmo
 editor: markdown
 dateCreated: 2026-05-24T06:02:20.640Z
@@ -82,8 +82,18 @@ Below is the specific suite of active addons. I use these to optimize raiding, l
 | ⏳ [Elkano's BuffBars](https://warperia.com/addon-wotlk/elkanos-buffbars/) | Replaces the standard buff and debuff icons. Uses highly detailed, text-based progress bars. |
 | 🟩 [Grid2](https://warperia.com/addon-wotlk/grid2/) | A highly optimized grid-based unit frame addon. Designed primarily for healers. Provides fast visual indicators for health. |
 | ⏱️ [OmniCC](https://warperia.com/addon-wotlk/omnicc/) | Adds digital cooldown countdown text. Displays directly onto your action bar buttons when they are on cooldown. |
+| 🔍 [pfQuest](https://warperia.com/addon-wotlk/pfquest/) | A lightweight quest helper tool. Includes a comprehensive in-game database. |
 | 💬 [Prat 3.0](https://warperia.com/addon-wotlk/prat/) | A comprehensive chat frame alteration addon. Adds custom coloring, timestamps, and easy URL copying. |
+| ❓ [Questie](https://warperia.com/addon-wotlk/questie/) | Adds quest objectives directly to your map. Tracks your leveling progress easily. |
 | 🗑️ [Scrap](https://warperia.com/addon-wotlk/scrap/) | Automatically sells all grey junk items in your bags. Repairs your equipment whenever you interact with a merchant vendor. |
 | ⚓ [Titan Panel](https://warperia.com/addon-wotlk/titanpanel/) | Adds an elegant information bar to your screen. Tracks gold, bag space, experience/hour, and durability. |
 | ✉️ [WoW Instant Messenger (WIM)](https://warperia.com/addon-wotlk/wowinstantmessenger/) | Isolates individual whisper conversations. Uses separate, clean, tabbed pop-up windows. |
 | 👤 [X-Perl UnitFrames](https://warperia.com/addon-wotlk/x-perlunitframes/) | Completely revamps the player, target, party, and raid frames. Features 3D animated portraits and highly visible health bars. |
+
+### 🔄 Alternative UI Overhaul
+
+> **Disclaimer:** I personally don't use this. A lot of people love it, though. I will add it here. ElvUI might make many other listed addons redundant. It covers a lot of the essentials.
+
+| Addon Name & Link | Description |
+| :--- | :--- |
+| 🖥️ [ElvUI](https://warperia.com/addon-wotlk/elvui/) | A complete replacement for the default user interface. Overhauls action bars, unit frames, and inventory all at once. |
