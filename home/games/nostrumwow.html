@@ -2,12 +2,93 @@
 title: Nostrum WoW 3.3.5a Guide | Classic Private Server
 description: Looking for a Turtle WoW replacement? Join Nostrum WoW, a 3.3.5a classic WoW private server. Enjoy x1 level progression and cross faction play.
 published: true
-date: 2026-05-24T07:46:49.784Z
+date: 2026-05-24T07:49:48.418Z
 tags: game, mmo, classic wow, private server, nostrumwow, 3.3.5a, addons
 editor: code
 dateCreated: 2026-05-24T06:02:20.640Z
 -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NostrumWoW Guide</title>
+<style>
+    body { 
+        font-family: 'Courier New', Courier, monospace; 
+        max-width: 800px; 
+        margin: 40px auto; 
+        padding: 20px; 
+        line-height: 1.6; 
+        background-color: #1a0b2e; 
+        color: #00ffff; 
+    }
+    h1, h2, h3 { 
+        color: #ff00ff; 
+        text-shadow: 2px 2px 0px #00ffff; 
+        border-bottom: 2px solid #ff00ff; 
+        padding-bottom: 5px; 
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    h2, h3 {
+        text-align: left;
+    }
+    img { 
+        max-width: 100%; 
+        height: auto; 
+        display: block; 
+        margin: 20px auto;
+        border: 2px solid #00ffff; 
+        box-shadow: 4px 4px 0px #ff00ff; 
+    }
+    .discord-btn {
+        border: none;
+        box-shadow: none;
+        max-width: 250px;
+        transition: transform 0.2s;
+    }
+    .discord-btn:hover {
+        transform: scale(1.05);
+    }
+    code { background: #2b1055; color: #ff00ff; padding: 2px 4px; border-radius: 4px; }
+    pre { background: #2b1055; color: #00ffff; padding: 15px; border-radius: 5px; overflow-x: auto; border: 1px solid #ff00ff; }
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; background: rgba(0, 0, 0, 0.4); }
+    th, td { border: 1px solid #00ffff; padding: 10px; text-align: left; vertical-align: top; }
+    th { background-color: #ff00ff; color: #1a0b2e; }
+    a { color: #ffff00; text-decoration: none; font-weight: bold; }
+    a:hover { background-color: #ff00ff; color: #1a0b2e; }
+    blockquote { border-left: 4px solid #ff00ff; margin-left: 0; padding-left: 15px; color: #00ffff; font-style: italic; background: rgba(255, 0, 255, 0.1); }
+    hr { border: 1px solid #00ffff; }
+    .center-content { text-align: center; }
+    
+    /* NEW STYLES */
+    .keyword {
+        font-weight: bold;
+        color: #00ff00; /* Neon Green */
+        text-shadow: 1px 1px 0px #000;
+    }
+    .disclaimer-box {
+        background-color: #cc0000; /* Red Background */
+        color: #ffffff;
+        padding: 15px;
+        border: 2px solid #ffff00;
+        border-radius: 5px;
+        font-family: monospace;
+        box-shadow: 4px 4px 0px #ff00ff;
+        margin: 20px 0;
+    }
+    .disclaimer-box h2 {
+        color: #ffff00;
+        text-shadow: 2px 2px 0px #000000;
+        border-bottom: 2px solid #ffff00;
+        margin-top: 0;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
 
 <h1>⚔️ NostrumWoW Connection, Media & UI Guide 🛡️</h1>
 
@@ -35,37 +116,97 @@ dateCreated: 2026-05-24T06:02:20.640Z
 <h2>✨ What makes Nostrum WoW Unique?</h2>
 <p><span class="keyword">Nostrum</span> is a <span class="keyword">Wrath of the Lich King</span> server. The community levels together. It starts on <span class="keyword">Phase 1</span>. The initial <span class="keyword">level cap is 19</span>. It progresses through every era. Players cannot rush ahead.</p>
 
-<h3>📈 Progression: The Road to 80</h3>
-<p>The server advances through <span class="keyword">three eras</span>.</p>
-<ul>
-    <li><strong style="color: #ffff00;">Azeroth Era (Classic):</strong> Caps at <span class="keyword">19, 29, 39, 49, and 60</span>.</li>
-    <li><strong style="color: #00ff00;">Outland Era (TBC):</strong> Caps at <span class="keyword">70</span>.</li>
-    <li><strong style="color: #00ffff;">Northrend Era (WotLK):</strong> Caps at <span class="keyword">80</span>.</li>
-</ul>
-<p><span class="keyword">Experience is 1x</span> in the active phase. Previous phases give <span class="keyword">2x catch-up experience</span>. Content unlocks with each phase. This includes dungeons, raids, and <span class="keyword">Death Knights</span>. <span class="keyword">Realm Firsts</span> announce cap winners. This creates a permanent record.</p>
+<h3>📈 Progression & Experience</h3>
+<table>
+    <tr>
+        <th>Era</th>
+        <th>Level Caps</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td><strong style="color: #ffff00;">Azeroth Era (Classic)</strong></td>
+        <td><span class="keyword">19, 29, 39, 49, 60</span></td>
+        <td>Content unlocks with each phase. Realm Firsts announce cap winners.</td>
+    </tr>
+    <tr>
+        <td><strong style="color: #00ff00;">Outland Era (TBC)</strong></td>
+        <td><span class="keyword">70</span></td>
+        <td><span class="keyword">Experience is 1x</span> in active phases.</td>
+    </tr>
+    <tr>
+        <td><strong style="color: #00ffff;">Northrend Era (WotLK)</strong></td>
+        <td><span class="keyword">80</span></td>
+        <td>Previous phases give <span class="keyword">2x catch-up experience</span>.</td>
+    </tr>
+</table>
 
 <h3>🤝 Cross-Faction System</h3>
-<p><span class="keyword">Alliance</span> and <span class="keyword">Horde</span> play together. This keeps the world active.</p>
-<ul>
-    <li>Groups and <span class="keyword">Dungeon Finder (RDF)</span>.</li>
-    <li><span class="keyword">Battlegrounds</span> and <span class="keyword">Auction House</span>.</li>
-    <li>Trade, mail, and <span class="keyword">guilds</span>.</li>
-</ul>
+<table>
+    <tr>
+        <th>System / Feature</th>
+        <th>Availability</th>
+    </tr>
+    <tr>
+        <td>Groups & <span class="keyword">Dungeon Finder (RDF)</span></td>
+        <td>✅ Cross-Faction</td>
+    </tr>
+    <tr>
+        <td><span class="keyword">Battlegrounds</span> & <span class="keyword">Auction House</span></td>
+        <td>✅ Cross-Faction</td>
+    </tr>
+    <tr>
+        <td>Trade, mail, and <span class="keyword">guilds</span></td>
+        <td>✅ Cross-Faction</td>
+    </tr>
+    <tr>
+        <td><span class="keyword">World Chat</span></td>
+        <td>✅ Cross-Faction (Auto-moderated)</td>
+    </tr>
+</table>
 
-<h3>🛠️ Quality of Life Features</h3>
-<ul>
-    <li><strong style="color: #ff9900;">Dual Spec:</strong> Unlocks at level 19 for <span class="keyword">1 gold</span>.</li>
-    <li><strong style="color: #ff9900;">Cheap Respecs:</strong> Resets never cost more than <span class="keyword">1 gold</span>.</li>
-    <li><strong style="color: #ff9900;">Instant Mail:</strong> No delays between players.</li>
-    <li><strong style="color: #ff9900;">Starter Bag:</strong> Get a <span class="keyword">12-slot bag</span> on your first login.</li>
-    <li><strong style="color: #ff9900;">Gold Milestones:</strong> Gold is mailed every <span class="keyword">10 levels</span>.</li>
-    <li><strong style="color: #ff9900;">Transmog:</strong> Customize your gear appearance.</li>
-    <li><strong style="color: #ff9900;">1v1 Arena:</strong> Structured <span class="keyword">solo PvP</span>.</li>
-    <li><strong style="color: #ff9900;">Battleground XP:</strong> Earn <span class="keyword">XP</span> from BGs. Wins give a bonus.</li>
-</ul>
-
-<h3>💬 World Chat & 💀 Hardcore Mode</h3>
-<p><span class="keyword">World chat</span> is cross-faction. It spans the whole server. It is automatically moderated. <span class="keyword">Hardcore Mode</span> is optional. You get <span class="keyword">one life</span>. Death is <span class="keyword">permanent</span>. You remain as a ghost.</p>
+<h3>🛠️ Quality of Life & Features</h3>
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Details</th>
+    </tr>
+    <tr>
+        <td><strong style="color: #ff9900;">Dual Spec</strong></td>
+        <td>Unlocks at level 19 for <span class="keyword">1 gold</span>.</td>
+    </tr>
+    <tr>
+        <td><strong style="color: #ff9900;">Cheap Respecs</strong></td>
+        <td>Resets never cost more than <span class="keyword">1 gold</span>.</td>
+    </tr>
+    <tr>
+        <td><strong style="color: #ff9900;">Instant Mail</strong></td>
+        <td>No delivery delays between players.</td>
+    </tr>
+    <tr>
+        <td><strong style="color: #ff9900;">Starter Bag</strong></td>
+        <td>Get a <span class="keyword">12-slot bag</span> on your first login.</td>
+    </tr>
+    <tr>
+        <td><strong style="color: #ff9900;">Gold Milestones</strong></td>
+        <td>Gold is mailed every <span class="keyword">10 levels</span>.</td>
+    </tr>
+    <tr>
+        <td><strong style="color: #ff9900;">Transmog</strong></td>
+        <td>Customize your gear appearance easily.</td>
+    </tr>
+    <tr>
+        <td><strong style="color: #ff9900;">1v1 Arena</strong></td>
+        <td>Structured <span class="keyword">solo PvP</span> combat.</td>
+    </tr>
+    <tr>
+        <td><strong style="color: #ff9900;">Battleground XP</strong></td>
+        <td>Earn <span class="keyword">XP</span> from BGs. Wins give a bonus multiplier.</td>
+    </tr>
+    <tr>
+        <td><strong style="color: #ff0000;">💀 Hardcore Mode</strong></td>
+        <td>Optional. You get <span class="keyword">one life</span>. Death is permanent.</td>
+    </tr>
+</table>
 
 <hr>
 
@@ -214,36 +355,60 @@ dateCreated: 2026-05-24T06:02:20.640Z
 
 <h2>📚 Useful Resources &amp; Guides</h2>
 
-<h3>🧮 3.3.5a Talent Calculator</h3>
-<p>Plan your character builds. Use this interactive <span class="keyword">talent tree</span> for WotLK.</p>
-<p>🔗 <strong><a href="https://wotlkdb.com/?talent">Open the Talent Calculator</a></strong></p>
-
-<h3>📜 3.3.5a Spell List</h3>
-<p>Research every spell and ability. Check exact ranks and numbers for the <span class="keyword">3.3.5a patch</span>.</p>
-<p>🔗 <strong><a href="https://wotlk.evowow.com/?spells=7">Open the Spell Database</a></strong></p>
-
-<h3>🗺️ Leveling Guides</h3>
-<p>Need help reaching <span class="keyword">level 80</span>? Follow these community guides for optimized routes.</p>
-<ul>
-    <li><strong><a href="https://forum.warmane.com/showthread.php?t=20826">Warmane Alliance &amp; Horde Leveling Guide</a></strong></li>
-    <li><strong><a href="https://legacy-wow.com/wotlk-leveling-guides/">Legacy-WoW WotLK Leveling Routes</a></strong></li>
-    <li><strong><a href="https://www.wowhead.com/wotlk/guide/leveling-overview-northrend-80-tips-tricks">Wowhead Northrend Leveling Overview</a></strong></li>
-</ul>
+<table>
+    <tr>
+        <th>Resource</th>
+        <th>Description</th>
+        <th>Link</th>
+    </tr>
+    <tr>
+        <td>🧮 <strong style="color: #ff9900;">3.3.5a Talent Calculator</strong></td>
+        <td>Plan character builds. Interactive <span class="keyword">talent tree</span> for WotLK.</td>
+        <td>🔗 <a href="https://wotlkdb.com/?talent">Open Calculator</a></td>
+    </tr>
+    <tr>
+        <td>📜 <strong style="color: #ff9900;">3.3.5a Spell List</strong></td>
+        <td>Research abilities. Check exact ranks for the <span class="keyword">3.3.5a patch</span>.</td>
+        <td>🔗 <a href="https://wotlk.evowow.com/?spells=7">Open Database</a></td>
+    </tr>
+    <tr>
+        <td>🗺️ <strong style="color: #ff9900;">Leveling Guides</strong></td>
+        <td>Need help reaching <span class="keyword">level 80</span>? Optimized community routes.</td>
+        <td>
+            <ul>
+                <li><a href="https://forum.warmane.com/showthread.php?t=20826">Warmane Guide</a></li>
+                <li><a href="https://legacy-wow.com/wotlk-leveling-guides/">Legacy-WoW Routes</a></li>
+                <li><a href="https://www.wowhead.com/wotlk/guide/leveling-overview-northrend-80-tips-tricks">Wowhead Overview</a></li>
+            </ul>
+        </td>
+    </tr>
+</table>
 
 <hr>
 
 <h2>⚠️ Common Problems</h2>
 
-<h3>🔌 Login Connection Fix</h3>
-<p><strong>Problem:</strong> You cannot log into the game, or you need the <span class="keyword">realmlist</span> files.</p>
-<p><strong>Fix:</strong> I uploaded a ZIP file. It contains the correct configuration folders. Download it below.</p>
-<p>💾 <strong><a href="http://share.allnight.city/u/WLJaxC.zip">Download Login Fix ZIP</a></strong></p>
-<p>Unzip this file. Put the contents directly into your <span class="keyword">NostrumWoW</span> game folder. Alternatively, unzip it on your desktop. Drag and drop the <code>Data</code> and <code>WTF</code> folders into your game folder. Overwrite the existing files.</p>
-
-<h3>🖥️ The Black Screen issue when Windowed Mode is set</h3>
-<p><strong>Problem:</strong> The game <span class="keyword">blackscreens</span>. This happens in <span class="keyword">windowed mode</span>. It happens with <span class="keyword">desktop gamma</span>. It stops when you press Esc.</p>
-<p><strong>Fix:</strong> Go to the game's <code>WTF</code> folder. Open <code>config.wtf</code> with Notepad. Add this line:</p>
-<pre><code>SET gxWindow "1"</code></pre>
+<table>
+    <tr>
+        <th>Issue</th>
+        <th>Solution &amp; Fix</th>
+    </tr>
+    <tr>
+        <td>🔌 <strong>Login Connection Drop</strong><br><br><em>Cannot log in or missing <span class="keyword">realmlist</span> files.</em></td>
+        <td>
+            Download this ZIP file. It contains the correct config folders.<br><br>
+            💾 <strong><a href="http://share.allnight.city/u/WLJaxC.zip">Download Login Fix ZIP</a></strong><br><br>
+            Unzip on your desktop. Drag the <code>Data</code> and <code>WTF</code> folders into your <span class="keyword">NostrumWoW</span> folder. Overwrite existing files.
+        </td>
+    </tr>
+    <tr>
+        <td>🖥️ <strong>Black Screen</strong><br><br><em>Game <span class="keyword">blackscreens</span> in windowed mode or with desktop gamma. Stops when pressing Esc.</em></td>
+        <td>
+            Open your game's <code>WTF</code> folder. Edit <code>config.wtf</code> with Notepad. Add this exact line:<br><br>
+            <pre style="margin: 10px 0;"><code>SET gxWindow "1"</code></pre>
+        </td>
+    </tr>
+</table>
 
 </body>
 </html>
