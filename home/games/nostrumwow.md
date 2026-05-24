@@ -2,7 +2,7 @@
 title: Nostrum WoW
 description: Some helpful things for Nostrum WoW
 published: true
-date: 2026-05-24T06:16:04.529Z
+date: 2026-05-24T06:18:27.804Z
 tags: game, mmo
 editor: markdown
 dateCreated: 2026-05-24T06:02:20.640Z
