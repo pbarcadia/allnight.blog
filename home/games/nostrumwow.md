@@ -2,7 +2,7 @@
 title: Nostrum WoW
 description: Some helpful things for Nostrum WoW
 published: true
-date: 2026-05-24T06:22:52.157Z
+date: 2026-05-24T06:36:37.710Z
 tags: game, mmo
 editor: markdown
 dateCreated: 2026-05-24T06:02:20.640Z
@@ -17,77 +17,88 @@ dateCreated: 2026-05-24T06:02:20.640Z
 
 ## 🌐 How to Connect to NostrumWoW 🧭
 
-Jump into the realm. Follow these steps to properly configure your game client:
+Jump into the realm. Follow these steps. Configure your game client.
 
 1. **Visit the Official Website** 🏛️
-* Head over to [NostrumWoW](https://nostrumwow.com/).
-* Register your account.
+* Go to [NostrumWoW](https://nostrumwow.com/).
+* Register an account.
 
 2. **Locate Your Realmlist File** 📁
-* Open your main **World of Warcraft** game directory.
-* Navigate to: `Data` ➔ `enUS`.
+* Open your main **World of Warcraft** folder.
+* Go to `Data`. Then open `enUS`.
 
 3. **Edit the Realmlist** ✍️
-* Open the `realmlist.wtf` file.
-* Use a standard text editor like Notepad.
-* Delete any existing lines.
-* Replace them with the official NostrumWoW address:
+* Open `realmlist.wtf`.
+* Use Notepad.
+* Delete old lines.
+* Add this official address:
 
 ```text
 set realmlist logon.nostrumwow.com
 ```
 
-* *Note: You might encounter a saving error. Right-click the file. Select **Properties**. Ensure **Read-only** is unchecked. Save again.*
+* *Note: Getting a save error? Right-click the file. Click **Properties**. Uncheck **Read-only**. Save it again.*
 
 4. **Launch the Game** 🎮
-* Always start the game using **Wow.exe**.
-* Find this in your main directory. 
-* Avoid using the default Blizzard launcher. This prevents your configuration files from overwriting.
+* Always use **Wow.exe**.
+* Find it in your main folder.
+* Do not use the Blizzard launcher. It will overwrite your files.
 
 ---
 
 ## 🎨 High-Definition Textures 🧊
 
-Give your client a massive visual upgrade. Do this before diving into modifications. This package adds beautiful modern resolutions. It upgrades the classic Wrath architecture and models:
+Upgrade your graphics. Do this first. This pack adds modern resolutions. It upgrades Wrath models.
 
 📦 **[Download the WotLK HD Texture Pack](https://bit.ly/3UxNLx6)**
 
-*Installation: Extract the downloaded files. Put them directly into your WoW client's `Data` folder.*
+*Installation: Extract the files. Put them in your WoW `Data` folder.*
 
 ---
 
 ## 🧩 Recommended Addons 🛠️
 
-All listed addons are tailored for the Wrath of the Lich King client. Browse and download them directly from the main index. Go to [Warperia WotLK Addons](https://warperia.com/wotlk-addons/).
+These work for Wrath of the Lich King. Get them from the main index. Visit [Warperia WotLK Addons](https://warperia.com/wotlk-addons/).
 
-### 🎒 Personal Addon Manifest
+### 🎒 Personal Addon List
 
-Below is the specific suite of active addons. I use these to optimize raiding, leveling, and management. Each includes direct links and an overview of their functions:
-
-| Addon Name & Link | Description |
-| :--- | :--- |
-| 📖 [Ackis Recipe List](https://warperia.com/addon-wotlk/ackis-recipe-list/) | Scans your professions. Provides a detailed list of missing recipes. Shows exactly where to obtain them. |
-| 💎 [AtlasLoot Enhanced](https://warperia.com/addon-wotlk/atlasloot-enhanced/) | A comprehensive UI database. Browse loot tables for dungeons and raids directly in-game. |
-| 🪙 [Auctionator](https://warperia.com/addon-wotlk/auctionator/) | Streamlines the Auction House interface. Makes posting single items and scanning market prices quick and simple. |
-| 🍺 [Bartender 4](https://warperia.com/addon-wotlk/bartender-4/) | A full action bar replacement addon. Gives you complete control over the layout and keybindings of your bars. |
-| 🗺️ [Carbonite](https://warperia.com/addon-wotlk/carbonite/) | A multi-featured questing and mapping overhaul tool. Provides an alternative map and optimized leveling routes. |
-| ⚔️ [Compact Nameplates](https://warperia.com/addon-wotlk/compact-nameplates/) | Replaces the bulky default enemy nameplates. Uses highly clean, lightweight bars for better visibility during combat. |
-| 📊 [Details! Damage Meter](https://warperia.com/addon-wotlk/details-damagemeter/) | A powerful, high-precision combat log analyzer. Tracks real-time DPS, damage done, and healing. |
-| ⏳ [Elkano's BuffBars](https://warperia.com/addon-wotlk/elkanos-buffbars/) | Replaces the standard buff and debuff icons. Uses highly detailed, text-based progress bars. |
-| 🟩 [Grid2](https://warperia.com/addon-wotlk/grid2/) | A highly optimized grid-based unit frame addon. Designed primarily for healers. Provides fast visual indicators for health. |
-| ⏱️ [OmniCC](https://warperia.com/addon-wotlk/omnicc/) | Adds digital cooldown countdown text. Displays directly onto your action bar buttons when they are on cooldown. |
-| 🔍 [pfQuest](https://warperia.com/addon-wotlk/pfquest/) | A lightweight quest helper tool. Includes a comprehensive in-game database. |
-| 💬 [Prat 3.0](https://warperia.com/addon-wotlk/prat/) | A comprehensive chat frame alteration addon. Adds custom coloring, timestamps, and easy URL copying. |
-| ❓ [Questie](https://warperia.com/addon-wotlk/questie/) | Adds quest objectives directly to your map. Tracks your leveling progress easily. |
-| 🗑️ [Scrap](https://warperia.com/addon-wotlk/scrap/) | Automatically sells all grey junk items in your bags. Repairs your equipment whenever you interact with a merchant vendor. |
-| ⚓ [Titan Panel](https://warperia.com/addon-wotlk/titanpanel/) | Adds an elegant information bar to your screen. Tracks gold, bag space, experience/hour, and durability. |
-| ✉️ [WoW Instant Messenger (WIM)](https://warperia.com/addon-wotlk/wowinstantmessenger/) | Isolates individual whisper conversations. Uses separate, clean, tabbed pop-up windows. |
-| 👤 [X-Perl UnitFrames](https://warperia.com/addon-wotlk/x-perlunitframes/) | Completely revamps the player, target, party, and raid frames. Features 3D animated portraits and highly visible health bars. |
-
-### 🔄 Alternative UI Overhaul
-
-> **Disclaimer:** I personally don't use this. A lot of people love it, though. I will add it here. ElvUI might make many other listed addons redundant. It covers a lot of the essentials.
+Here is my active addon list. I use these for raiding. They help with leveling. Here are the links and details:
 
 | Addon Name & Link | Description |
 | :--- | :--- |
-| 🖥️ [ElvUI](https://warperia.com/addon-wotlk/elvui/) | A complete replacement for the default user interface. Overhauls action bars, unit frames, and inventory all at once. |
+| 📖 [Ackis Recipe List](https://warperia.com/addon-wotlk/ackis-recipe-list/) | Scans professions. Lists missing recipes. Shows where to find them. |
+| 💎 [AtlasLoot Enhanced](https://warperia.com/addon-wotlk/atlasloot-enhanced/) | Browse loot tables. Check dungeons and raids in-game. |
+| 🪙 [Auctionator](https://warperia.com/addon-wotlk/auctionator/) | Fixes the Auction House. Makes posting items easy. Scans market prices fast. |
+| 🍺 [Bartender 4](https://warperia.com/addon-wotlk/bartender-4/) | Replaces action bars. Gives layout control. Customizes keybindings. |
+| 🗺️ [Carbonite](https://warperia.com/addon-wotlk/carbonite/) | Quest and map overhaul. Adds an alternate map. Shows fast leveling routes. |
+| ⚔️ [Compact Nameplates](https://warperia.com/addon-wotlk/compact-nameplates/) | Replaces default nameplates. Uses clean bars. Improves combat visibility. |
+| 📊 [Details! Damage Meter](https://warperia.com/addon-wotlk/details-damagemeter/) | Analyzes combat logs. Tracks DPS in real-time. Shows damage and healing. |
+| ⏳ [Elkano's BuffBars](https://warperia.com/addon-wotlk/elkanos-buffbars/) | Replaces buff icons. Uses detailed progress bars. |
+| 🟩 [Grid2](https://warperia.com/addon-wotlk/grid2/) | Grid-based unit frames. Great for healers. Shows health clearly. |
+| ⏱️ [OmniCC](https://warperia.com/addon-wotlk/omnicc/) | Adds cooldown text. Numbers show on action bars. |
+| 🔍 [pfQuest](https://warperia.com/addon-wotlk/pfquest/) | Lightweight quest helper. Includes an in-game database. |
+| 💬 [Prat 3.0](https://warperia.com/addon-wotlk/prat/) | Chat frame addon. Adds custom colors. Shows timestamps. Copies URLs easily. |
+| ❓ [Questie](https://warperia.com/addon-wotlk/questie/) | Puts quests on your map. Tracks leveling progress. |
+| 🗑️ [Scrap](https://warperia.com/addon-wotlk/scrap/) | Sells grey junk automatically. Repairs gear at vendors. |
+| ⚓ [Titan Panel](https://warperia.com/addon-wotlk/titanpanel/) | Adds a top info bar. Tracks gold and bag space. Shows XP and durability. |
+| ✉️ [WoW Instant Messenger (WIM)](https://warperia.com/addon-wotlk/wowinstantmessenger/) | Isolates whispers. Uses clean pop-up windows. |
+| 👤 [X-Perl UnitFrames](https://warperia.com/addon-wotlk/x-perlunitframes/) | Revamps unit frames. Adds 3D portraits. Shows clear health bars. |
+
+### 🔄 Alternative UI
+
+> **Note:** I do not use this. Many people love it. It is included here. ElvUI replaces many addons. It covers all the basics.
+
+| Addon Name & Link | Description |
+| :--- | :--- |
+| 🖥️ [ElvUI](https://warperia.com/addon-wotlk/elvui/) | Total UI replacement. Overhauls action bars. Changes unit frames and bags. |
+
+---
+
+## ⚠️ Common Problems
+
+### The Black Screen
+
+**Problem:** The game blackscreens. This happens in windowed mode. It happens with desktop gamma. It stops when you press Esc.
+
+**Fix:** Go to the game's `WTF` folder. Open `config.wtf` with Notepad. Add this line:
+`SET gxWindow "1"`
