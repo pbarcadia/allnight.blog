@@ -2,7 +2,7 @@
 title: Nostrum WoW 3.3.5a Guide | Classic Private Server
 description: Looking for a Turtle WoW replacement? Join Nostrum WoW, a 3.3.5a classic WoW private server. Enjoy x1 level progression and cross faction play.
 published: true
-date: 2026-05-24T08:50:10.402Z
+date: 2026-05-24T11:35:07.240Z
 tags: game, mmo, classic wow, private server, nostrumwow, 3.3.5a, addons
 editor: code
 dateCreated: 2026-05-24T06:02:20.640Z
@@ -405,7 +405,9 @@ dateCreated: 2026-05-24T06:02:20.640Z
         <td>🖥️ <strong>Black Screen</strong><br><br><em>Game <span class="keyword">blackscreens</span> in windowed mode or with desktop gamma. Stops when pressing Esc.</em></td>
         <td>
             Open your game's <code>WTF</code> folder. Edit <code>config.wtf</code> with Notepad. Add this exact line:<br><br>
-            <pre style="margin: 10px 0;"><code>SET gxWindow "1"</code></pre>
+            <pre style="margin: 10px 0;"><code>SET gxWindow "1"</code></pre><br>
+            Do you have more than two screens? The first fix might fail. Add these lines instead:<br><br>
+            <pre style="margin: 10px 0;"><code>SET gxWindow "1"<br>SET gxMaximize "1"</code></pre>
         </td>
     </tr>
 </table>
