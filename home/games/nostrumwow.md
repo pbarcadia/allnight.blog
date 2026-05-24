@@ -2,7 +2,7 @@
 title: Nostrum WoW
 description: Some helpful things for Nostrum WoW
 published: true
-date: 2026-05-24T06:19:20.338Z
+date: 2026-05-24T06:19:53.086Z
 tags: game, mmo
 editor: markdown
 dateCreated: 2026-05-24T06:02:20.640Z
@@ -10,13 +10,7 @@ dateCreated: 2026-05-24T06:02:20.640Z
 
 # ⚔️ NostrumWoW Connection, Media & UI Guide 🛡️
 
-## 📜 Preface: The Saga Begins! 🚀
 
-Greetings, travelers! 🌌 **NostrumWoW** is a brand new realm. It officially launched just one week ago. The community is absolutely exploding with hype! We have officially planted our stakes here. 🚩
-
-We teamed up with two other phenomenal content creators. We have formed the ultimate streamer powerhouse guild. We are the streamer guild of the server: **`\<WITNESS ME\>`**! 💀🔥
-
-Catch the action live. See the UI in motion. Hang out with the community during the grind. Make sure to ride over and subscribe to the stream:
 📺 **[PB Arcadia Live Stream](https://www.youtube.com/@PBQuest_)**
 
 ---
