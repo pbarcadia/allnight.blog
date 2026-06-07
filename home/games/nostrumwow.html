@@ -2,7 +2,7 @@
 title: Nostrum WoW 3.3.5a Guide | Classic Private Server
 description: Looking for a Turtle WoW replacement? Join Nostrum WoW, a 3.3.5a classic WoW private server. Enjoy x1 level progression and cross faction play.
 published: true
-date: 2026-06-07T21:40:19.868Z
+date: 2026-06-07T21:42:33.990Z
 tags: game, mmo, classic wow, private server, nostrumwow, 3.3.5a, addons
 editor: code
 dateCreated: 2026-05-24T06:02:20.640Z
@@ -26,64 +26,6 @@ dateCreated: 2026-05-24T06:02:20.640Z
     </li>
     <li><strong>Extract the Files:</strong> Once the download finishes, unzip the game client folder package to your local system directory.</li>
 </ol><div>
-
-</div><h3 id="optional-but-very-much-reccomended-wow-exe-fixes" class="toc-header"><a class="toc-anchor" href="#optional-but-very-much-reccomended-wow-exe-fixes">¶</a> 🛠️ Optional but very much reccomended wow.exe fixes</h3>
-<p><em>Fixes compiled and written by <strong>TeknishunOP</strong>.</em></p>
-<p>If you encounter memory limit crashes, camera jumping issues, or annoying druid shapeshift sound loops, consider applying these community-made fixes to your game client:</p>
-
-<details style="border: 1px solid #ff00ff; background-color: #2b1055; padding: 10px; border-radius: 5px; margin-bottom: 15px; color: #00ffff; cursor: pointer;">
-    <summary style="font-weight: bold; color: #ff00ff; outline: none;">⚙️ [4GB Patch / LAA Patch]</summary>
-    <div style="margin-top: 10px; cursor: default;">
-        <p>🔗 <strong>Download:</strong> <a href="https://ntcore.com/4gb-patch/" target="_blank" class="is-external-link">NTCore 4GB Patch</a></p>
-        <p>Back then, 32-bit binaries were limited to 2GB of RAM they could use. This wasn't really an issue back in the days since most people had around 4GB RAM.</p>
-        <p>The games also didn't run at crazy high resolutions, addons usage was limited, a lot of players didn't even use any, and HD patches weren't a thing. You get the idea.</p>
-        <p>WoW isn't perfect, and old clients you fetch online likely aren't patched. If you encounter crashes related to memory issues, applying the 4GB patch will help considerably.</p>
-        <p><strong>Note:</strong> If you use an HD patch, you definitely need to 4GB patch the game if it isn't already.</p>
-        <p>On Linux, you may also want to 4GB patch your old 32-bit games because WINE tends to be a bit more susceptible to memory leaks.</p>
-        <p>🔧 <strong>How to use:</strong> Simply download the patcher, place it next to your <code>Wow.exe</code>, run the patcher, and select <code>Wow.exe</code>. It will create a backup copy named <code>Wow.exe.bak</code> and patch <code>Wow.exe</code> to now be Large Address Aware.</p>
-        <p>🛡️ <strong>Safety & Warden:</strong> Will this trigger Warden or get you banned? <strong>Absolutely not.</strong> This is simply a byte flip in the header of the binary file telling Windows it can now use 4GB of RAM for that application. Literally only a single byte is changed.</p>
-    </div>
-</details>
-
-<details style="border: 1px solid #ff00ff; background-color: #2b1055; padding: 10px; border-radius: 5px; margin-bottom: 15px; color: #00ffff; cursor: pointer;">
-    <summary style="font-weight: bold; color: #ff00ff; outline: none;">🖱️ [Mouse Bug / Camera Bug Fix]</summary>
-    <div style="margin-top: 10px; cursor: default;">
-        <p>🔗 <strong>Download:</strong> <a href="https://mega.nz/folder/ykZglR6J#LOG-hGTqJ3ZOTROwTlG5Hw" target="_blank" class="is-external-link">WoW Camera Bug Fix Archive</a></p>
-        <p>This issue doesn't affect everyone, but if you're affected, you likely know what it is just from the title and lost all of your sanity trying to fix it.</p>
-        <p>The issue is simple: when you hold both of your mouse buttons (left and right click) to steer your character or move your camera, the camera will sometimes jump to the left or right, up or down. The closer your cursor is to the edge of the screen when you click, the bigger the camera jump.</p>
-        <p>This issue plagues all old WoW clients (Vanilla, TBC, Wrath). It was eventually fixed by Blizzard in Cataclysm, but since we are playing with old clients, it is still widely spread. Luckily, someone hex edited the binary for all three versions of the game and included the assembly changes in the archive.</p>
-        <p>🔧 <strong>How to use:</strong></p>
-        <ol>
-            <li>Download the zip file and extract it.</li>
-            <li>Rename your original <code>Wow.exe</code> to <code>Wow.exe.bak</code>.</li>
-            <li>Place <code>Wow Camera Patch.exe</code> in your game folder and rename it to <code>Wow.exe</code>.</li>
-            <li>Use this new executable to launch the game (you can apply the 4GB patch over it as well!).</li>
-            <li><strong>Note:</strong> If you use a desktop shortcut, delete it and recreate it from the new <code>Wow.exe</code>.</li>
-        </ol>
-        <p>🛡️ <strong>Safety & Trust:</strong></p>
-        <ul>
-            <li>Will this trigger Warden or get you banned? <strong>Absolutely not.</strong></li>
-            <li>This fix was used by TurtleWoW, and VanillaTweaks eventually implemented it. Check the <a href="https://github.com/brndd/vanilla-tweaks/issues/17" target="_blank" class="is-external-link">GitHub PR discussion</a> for technical details.</li>
-            <li>The source code is included in the mega.nz folder, and scans on VirusTotal are clean. (Windows Defender may flag it as PUA simply because it is unsigned).</li>
-        </ul>
-        <p>⚠️ <em>Important: Do NOT use Vanilla Tweaks on your Wrath client. The link is provided for explanation purposes only.</em></p>
-    </div>
-</details>
-
-<details style="border: 1px solid #ff00ff; background-color: #2b1055; padding: 10px; border-radius: 5px; margin-bottom: 15px; color: #00ffff; cursor: pointer;">
-    <summary style="font-weight: bold; color: #ff00ff; outline: none;">🦉 [Moonkin Sound Bug]</summary>
-    <div style="margin-top: 10px; cursor: default;">
-        <p>🔗 <strong>Issue Details:</strong> <a href="https://github.com/chromiecraft/chromiecraft/issues/8175" target="_blank" class="is-external-link">ChromieCraft Issue #8175</a></p>
-        <p>This issue affects all 3.3.5 servers since it is a client-side bug (likely present in retail Wrath back in 2009). When you are shapeshifted as a Moonkin and perform certain actions (such as unsheathing or sheathing your weapon), the shapeshift sound plays repeatedly.</p>
-        <p>This is highly annoying if you play with sound effects turned on. Because addons cannot modify game files or override sounds dynamically for security reasons, the only fix is to override the sound file with a blank dummy file.</p>
-        <p>⚠️ <strong>Downside:</strong> This will also mute the sound when you actually shapeshift into Moonkin form, as the client cannot differentiate between the two events.</p>
-        <p>🔧 <strong>How to fix:</strong></p>
-        <p>Create a spoofed, silent/blank audio file and place it at this exact path inside your WoW installation:</p>
-        <pre><code>World of Warcraft\Sound\Spells\DruidMorph_Impact_Base.wav</code></pre>
-        <p><em>Linux users: Ensure proper capitalization and use forward slashes (<code>/</code>).</em></p>
-        <p>🔊 <strong>Original Sound Reference:</strong> <a href="https://www.wowhead.com/wotlk/sound=10063/druidmorph-impact-base" target="_blank" class="is-external-link">druidmorph-impact-base on Wowhead</a></p>
-    </div>
-</details>
 <div>
 
 </div><div class="center-content">
@@ -402,29 +344,93 @@ dateCreated: 2026-05-24T06:02:20.640Z
 
 </div><hr><div>
 
-</div><h2 id="️-common-problems" class="toc-header"><a class="toc-anchor" href="#️-common-problems">¶</a> ⚠️ Common Problems</h2><div>
+</div><h2 id="troubleshooting-client-fixes" class="toc-header"><a class="toc-anchor" href="#troubleshooting-client-fixes">¶</a> ⚠️ Troubleshooting &amp; Client Fixes</h2>
+<p>Having issues logging in, graphics glitches, or memory limit crashes? Here are step-by-step solutions to common problems and recommended WoW client fixes:</p>
 
-</div><div class="table-container"><table>
-    <tbody><tr>
-        <th>Issue</th>
-        <th>Solution &amp; Fix</th>
-    </tr>
-    <tr>
-        <td>🔌 <strong>Can't log in; realmlist files</strong><br><br><em>Cannot log in or missing <span class="keyword">realmlist</span> files.</em></td>
-        <td>
-            Download this ZIP file. It contains the correct config folders.<br><br>
-            💾 <strong><a href="http://share.allnight.city/u/fHo743.zip" class="is-external-link">Download Login Fix ZIP</a></strong><br><br>
-            Make sure to shut down the game entirely. Unzip on your desktop. Drag the <code>Data</code> folder into your <span class="keyword">NostrumWoW</span> folder. Overwrite existing files. Rename your <code>WTF</code> file to <code>WTF.old</code> and restart the game. You should now be able to log into NostrumWoW. If you are unable to overwrite the file, then you must do so as administrator.
-        </td>
-    </tr>
-    <tr>
-        <td>🖥️ <strong>Black Screen</strong><br><br><em>Game <span class="keyword">blackscreens</span> in windowed mode or with desktop gamma. Stops when pressing Esc.</em></td>
-        <td>
-            Open your game's <code>WTF</code> folder. Edit <code>config.wtf</code> with Notepad. Add this exact line:<br><br>
-            <pre style="margin: 10px 0;" class="prismjs line-numbers" v-pre="true"><code class="language-">SET gxWindow "1"</code></pre><br>
-            Do you have more than two screens? The first fix might fail. Add these lines instead:<br><br>
-            <pre style="margin: 10px 0;" class="prismjs line-numbers" v-pre="true"><code class="language-">SET gxWindow "1"
-SET gxMaximize "1"</code></pre>
-        </td>
-    </tr>
-</tbody></table></div>
+<details style="border: 1px solid #ff00ff; background-color: #2b1055; padding: 10px; border-radius: 5px; margin-bottom: 15px; color: #00ffff; cursor: pointer;">
+    <summary style="font-weight: bold; color: #ff00ff; outline: none;">🔌 [Can't log in / Missing realmlist files]</summary>
+    <div style="margin-top: 10px; cursor: default;">
+        <p>If you cannot log in or are missing config files, download this pre-configured folder archive:</p>
+        <p>💾 <strong><a href="http://share.allnight.city/u/fHo743.zip" class="is-external-link">Download Login Fix ZIP</a></strong></p>
+        <p>🔧 <strong>How to apply:</strong></p>
+        <ol>
+            <li>Shut down the game client entirely.</li>
+            <li>Unzip the downloaded package on your desktop.</li>
+            <li>Drag the extracted <code>Data</code> folder into your main <code>NostrumWoW</code> directory (overwrite existing files).</li>
+            <li>Rename your current <code>WTF</code> directory to <code>WTF.old</code>.</li>
+            <li>Restart the game and attempt to log in.</li>
+        </ol>
+        <p><em>Note: If you are unable to overwrite the file, make sure to execute the copy action as an administrator.</em></p>
+    </div>
+</details>
+
+<details style="border: 1px solid #ff00ff; background-color: #2b1055; padding: 10px; border-radius: 5px; margin-bottom: 15px; color: #00ffff; cursor: pointer;">
+    <summary style="font-weight: bold; color: #ff00ff; outline: none;">🖥️ [Black Screen / Windowed settings]</summary>
+    <div style="margin-top: 10px; cursor: default;">
+        <p>If your game black-screens in windowed mode or with desktop gamma (stops when pressing <code>Esc</code>):</p>
+        <p>🔧 <strong>How to fix:</strong></p>
+        <ol>
+            <li>Open the <code>WTF</code> directory inside your main WoW folder.</li>
+            <li>Open <code>config.wtf</code> using Notepad or any text editor.</li>
+            <li>Add this line to the file:
+                <pre><code>SET gxWindow "1"</code></pre>
+            </li>
+        </ol>
+        <p>🖥️ <strong>Dual-Screen/Multi-Screen Fix:</strong> If you use two or more screens and the fix above fails, add these lines instead:</p>
+        <pre><code>SET gxWindow "1"&#10;SET gxMaximize "1"</code></pre>
+    </div>
+</details>
+
+<details style="border: 1px solid #ff00ff; background-color: #2b1055; padding: 10px; border-radius: 5px; margin-bottom: 15px; color: #00ffff; cursor: pointer;">
+    <summary style="font-weight: bold; color: #ff00ff; outline: none;">⚙️ [4GB Patch / LAA Patch] <span style="font-size: 0.85em; font-weight: normal; color: #ffff00; font-style: italic;">— Written by TeknishunOP</span></summary>
+    <div style="margin-top: 10px; cursor: default;">
+        <p>🔗 <strong>Download:</strong> <a href="https://ntcore.com/4gb-patch/" target="_blank" class="is-external-link">NTCore 4GB Patch</a></p>
+        <p>Back then, 32-bit binaries were limited to 2GB of RAM they could use. This wasn't really an issue back in the days since most people had around 4GB RAM.</p>
+        <p>The games also didn't run at crazy high resolutions, addons usage was limited, a lot of players didn't even use any, and HD patches weren't a thing. You get the idea.</p>
+        <p>WoW isn't perfect, and old clients you fetch online likely aren't patched. If you encounter crashes related to memory issues, applying the 4GB patch will help considerably.</p>
+        <p><strong>Note:</strong> If you use an HD patch, you definitely need to 4GB patch the game if it isn't already.</p>
+        <p>On Linux, you may also want to 4GB patch your old 32-bit games because WINE tends to be a bit more susceptible to memory leaks.</p>
+        <p>🔧 <strong>How to use:</strong> Simply download the patcher, place it next to your <code>Wow.exe</code>, run the patcher, and select <code>Wow.exe</code>. It will create a backup copy named <code>Wow.exe.bak</code> and patch <code>Wow.exe</code> to now be Large Address Aware.</p>
+        <p>🛡️ <strong>Safety & Warden:</strong> Will this trigger Warden or get you banned? <strong>Absolutely not.</strong> This is simply a byte flip in the header of the binary file telling Windows it can now use 4GB of RAM for that application. Literally only a single byte is changed.</p>
+    </div>
+</details>
+
+<details style="border: 1px solid #ff00ff; background-color: #2b1055; padding: 10px; border-radius: 5px; margin-bottom: 15px; color: #00ffff; cursor: pointer;">
+    <summary style="font-weight: bold; color: #ff00ff; outline: none;">🖱️ [Mouse Bug / Camera Bug Fix] <span style="font-size: 0.85em; font-weight: normal; color: #ffff00; font-style: italic;">— Written by TeknishunOP</span></summary>
+    <div style="margin-top: 10px; cursor: default;">
+        <p>🔗 <strong>Download:</strong> <a href="https://mega.nz/folder/ykZglR6J#LOG-hGTqJ3ZOTROwTlG5Hw" target="_blank" class="is-external-link">WoW Camera Bug Fix Archive</a></p>
+        <p>This issue doesn't affect everyone, but if you're affected, you likely know what it is just from the title and lost all of your sanity trying to fix it.</p>
+        <p>The issue is simple: when you hold both of your mouse buttons (left and right click) to steer your character or move your camera, the camera will sometimes jump to the left or right, up or down. The closer your cursor is to the edge of the screen when you click, the bigger the camera jump.</p>
+        <p>This issue plagues all old WoW clients (Vanilla, TBC, Wrath). It was eventually fixed by Blizzard in Cataclysm, but since we are playing with old clients, it is still widely spread. Luckily, someone hex edited the binary for all three versions of the game and included the assembly changes in the archive.</p>
+        <p>🔧 <strong>How to use:</strong></p>
+        <ol>
+            <li>Download the zip file and extract it.</li>
+            <li>Rename your original <code>Wow.exe</code> to <code>Wow.exe.bak</code>.</li>
+            <li>Place <code>Wow Camera Patch.exe</code> in your game folder and rename it to <code>Wow.exe</code>.</li>
+            <li>Use this new executable to launch the game (you can apply the 4GB patch over it as well!).</li>
+            <li><strong>Note:</strong> If you use a desktop shortcut, delete it and recreate it from the new <code>Wow.exe</code>.</li>
+        </ol>
+        <p>🛡️ <strong>Safety & Trust:</strong></p>
+        <ul>
+            <li>Will this trigger Warden or get you banned? <strong>Absolutely not.</strong></li>
+            <li>This fix was used by TurtleWoW, and VanillaTweaks eventually implemented it. Check the <a href="https://github.com/brndd/vanilla-tweaks/issues/17" target="_blank" class="is-external-link">GitHub PR discussion</a> for technical details.</li>
+            <li>The source code is included in the mega.nz folder, and scans on VirusTotal are clean. (Windows Defender may flag it as PUA simply because it is unsigned).</li>
+        </ul>
+        <p>⚠️ <em>Important: Do NOT use Vanilla Tweaks on your Wrath client. The link is provided for explanation purposes only.</em></p>
+    </div>
+</details>
+
+<details style="border: 1px solid #ff00ff; background-color: #2b1055; padding: 10px; border-radius: 5px; margin-bottom: 15px; color: #00ffff; cursor: pointer;">
+    <summary style="font-weight: bold; color: #ff00ff; outline: none;">🦉 [Moonkin Sound Bug] <span style="font-size: 0.85em; font-weight: normal; color: #ffff00; font-style: italic;">— Written by TeknishunOP</span></summary>
+    <div style="margin-top: 10px; cursor: default;">
+        <p>🔗 <strong>Issue Details:</strong> <a href="https://github.com/chromiecraft/chromiecraft/issues/8175" target="_blank" class="is-external-link">ChromieCraft Issue #8175</a></p>
+        <p>This issue affects all 3.3.5 servers since it is a client-side bug (likely present in retail Wrath back in 2009). When you are shapeshifted as a Moonkin and perform certain actions (such as unsheathing or sheathing your weapon), the shapeshift sound plays repeatedly.</p>
+        <p>This is highly annoying if you play with sound effects turned on. Because addons cannot modify game files or override sounds dynamically for security reasons, the only fix is to override the sound file with a blank dummy file.</p>
+        <p>⚠️ <strong>Downside:</strong> This will also mute the sound when you actually shapeshift into Moonkin form, as the client cannot differentiate between the two events.</p>
+        <p>🔧 <strong>How to fix:</strong></p>
+        <p>Create a spoofed, silent/blank audio file and place it at this exact path inside your WoW installation:</p>
+        <pre><code>World of Warcraft\Sound\Spells\DruidMorph_Impact_Base.wav</code></pre>
+        <p><em>Linux users: Ensure proper capitalization and use forward slashes (<code>/</code>).</em></p>
+        <p>🔊 <strong>Original Sound Reference:</strong> <a href="https://www.wowhead.com/wotlk/sound=10063/druidmorph-impact-base" target="_blank" class="is-external-link">druidmorph-impact-base on Wowhead</a></p>
+    </div>
+</details>
